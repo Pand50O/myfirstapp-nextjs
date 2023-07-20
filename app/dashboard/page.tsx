@@ -14,17 +14,17 @@ export default async function Dashboard() {
 
   // console.log(session?.user?.image!);
 
-  const currentUserName = session?.user?.name!;
-  const user = await prisma.user.findUnique({
-    where: {
-      email: currentUserName,
-    },
-  });
+  // const currentUserName = session?.user?.name!;
+  // const user = await prisma.user.findUnique({
+  //   where: {
+  //     email: currentUserName,
+  //   },
+  // });
 
   return (
     <>
       <h1>Dashboard</h1>
-      <ProfileForm user={user} />
+      {/* <ProfileForm user={user} /> */}
     </>
   )
 }
